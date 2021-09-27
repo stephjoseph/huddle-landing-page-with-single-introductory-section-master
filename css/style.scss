@@ -1,0 +1,115 @@
+// Global Styles
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  background: url("../images/bg-desktop.svg") no-repeat hsl(257, 40%, 49%) fixed
+    center;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 0.7rem 3rem;
+  margin: 0;
+  text-decoration: none;
+  background: #fff;
+  color: hsl(257, 40%, 49%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3) !important;
+}
+
+button:active {
+  display: inline-block;
+  border: none;
+  padding: 0.7rem 3rem;
+  margin: 0;
+  text-decoration: none;
+  background: hsl(300, 69%, 71%);
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3) !important;
+}
+.social-icons {
+  list-style: none;
+  padding: 0;
+  li a {
+    color: #fff;
+    display: flex;
+    margin-left: 8px;
+    height: 35px;
+    width: 35px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  a:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(352, 75%, 73%);
+  }
+
+  a:active {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(352, 75%, 73%);
+  }
+}
+
+// Attribution Styles
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+// Media Query
+@media screen and (max-width: 576px) {
+  html,
+  body {
+    background: url("../images/bg-mobile.svg") #674baf fixed top no-repeat;
+    background-size: contain;
+  }
+  .logo {
+    width: 40%;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 0.7rem 4rem;
+  }
+}
